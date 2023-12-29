@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcula tu promedio | GR</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <div class="left">
+          <h1>Calculadora de promedio</h1>
+        </div>
+        <div class="right">
+          <nav>
+            <a href="index.html" >Inicio</a>
+            <a href="https://github.com/gusgosdev/average-calculator" target="_blank">Volver al repositorio</a>
+          </nav>
+        </div>
+    </header>
+<!-------------------- Cuerpo -------------------->
+    <div class="form">
+        <form>
+            <label for="primera">Ingresa tu nota AA1:</label>
+            <input type="text" id="primera" name="primera">     <br><br>
+    
+            <label for="segunda">Ingresa tu nota AA2:</label>
+            <input type="text" id="segunda" name="segunda">     <br><br>
+    
+            <label for="tercera">Ingresa tu nota AA3:</label>
+            <input type="text" id="tercera" name="tercera">     <br><br>
+    
+            <label for="cuarta">Ingresa tu nota AA4:</label>
+            <input type="text" id="cuarta" name="cuarta">       <br><br>
+    
+            <!-------- Botón de envío -------->
+            <button onclick="calcularProm()">Calcular mi promedio</button><br><br>
+
+            <!-------- Output del promedio -------->
+            <!-- <label for="total">Tu promedio es:</label>
+            <input type="text" id="total" name="total" disabled> -->
+            <!--  -->
+        </form>
+    </div>
+
+<!-------------------- Footer -------------------->
+    <footer>
+        <div>
+          <p>&copy; 2023 Desarrollado por Gustavo Ramirez.</p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+</html>
