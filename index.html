@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcula tu promedio | GR</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -19,27 +19,34 @@
         </div>
     </header>
 <!-------------------- Cuerpo -------------------->
+    
+    <div>
+      <h3>Recuerda que:</h3>
+      <p>La AA1 tiene un peso del 15%</p>
+      <p>La AA2 tiene un peso del 20%</p>
+      <p>La AA3 tiene un peso del 30%</p>
+      <p>La AA4 tiene un peso del 35%</p>
+    </div>
     <div class="form">
         <form>
             <label for="primera">Ingresa tu nota AA1:</label>
-            <input type="text" id="primera" name="primera">     <br><br>
+            <input type="number" id="primera" name="primera" maxlength="2">     <br><br>
     
             <label for="segunda">Ingresa tu nota AA2:</label>
-            <input type="text" id="segunda" name="segunda">     <br><br>
+            <input type="number" id="segunda" name="segunda" maxlength="2">     <br><br>
     
             <label for="tercera">Ingresa tu nota AA3:</label>
-            <input type="text" id="tercera" name="tercera">     <br><br>
+            <input type="number" id="tercera" name="tercera" maxlength="2">     <br><br>
     
             <label for="cuarta">Ingresa tu nota AA4:</label>
-            <input type="text" id="cuarta" name="cuarta">       <br><br>
+            <input type="number" id="cuarta" name="cuarta" maxlength="2">       <br><br>
     
             <!-------- Botón de envío -------->
-            <button onclick="calcularProm()">Calcular mi promedio</button><br><br>
+            <button type="button" onclick="calcularProm(event)">Calcular mi promedio</button><br><br>
 
             <!-------- Output del promedio -------->
-            <!-- <label for="total">Tu promedio es:</label>
-            <input type="text" id="total" name="total" disabled> -->
-            <!--  -->
+            <label for="miInput">Tu promedio es:</label>
+            <input type="text" id="miInput" disabled="Acá se verá tu promedio">
         </form>
     </div>
 
