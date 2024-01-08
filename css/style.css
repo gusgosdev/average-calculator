@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400&display=swap');
 :root{
     --clr-color: #2c3e50;
     --clr-fondo: whitesmoke;
+    --clr-form:  #34495e;
 }
 body{
-    font-family: Arial, sans-serif;
+    font-family: 'roboto mono', sans-serif;
     margin: 0;
     padding: 0;
     padding-top: 105px;
@@ -20,6 +22,7 @@ header{
     z-index: 1000;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header h1{
     margin: 0;
@@ -44,12 +47,77 @@ nav a:hover{
 }
 
 /* ---------- Cuerpo ---------- */
+#recordatorio{
+    width: 30%;
+    margin: 0 auto;
+    padding: 2px 2px 15px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+#record{
+    /* width: 20%; */
+    margin: 0 auto;
+}
+.izq{
+    text-align: left;
+    padding-left: 25px;
+}
+#second{
+    width: 100%;
+    margin: 0 auto;
+}
+.than{
+    margin: 0 auto;
+    padding-bottom: 4px;
+    text-align: center;
+}
+
+/*---------- Formulario ----------*/
 .form{
-    height: 350px;
+    /* background-color: var(--clr-form); */
+    height: auto;
+    margin: 0 auto;
     padding: 25px;
+    font-weight: bold;
+    width: 30%;
+}
+.interno{
+    /* width: 21%; */
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px solid var(--clr-form);
+    border-radius: 25px;
+    background-color: var(--clr-form);
 }
 form{
-    padding: 12px;
+    padding: 10px;
+    text-align: center;
+    color: var(--clr-fondo);
+}
+button{
+    font-family: 'roboto mono', sans-serif;
+    background-color: var(--clr-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100vmax;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #b2bec3;
+    color: #2d3436;
+}
+a{
+    text-decoration: none;
+}
+#otro{
+    display: none;
+    margin: 0 auto;
+}
+#aparecer{
+    display: none;
 }
 
 /* ---------- Footer ---------- */
@@ -67,3 +135,58 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+
+
+
+/* Hasta #px el máx */
+@media screen and (max-width: 884px) {
+    #recordatorio{
+        width: 60%;
+        margin-top: 50px;
+        padding: 2px 2px 15px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 25px;
+    }
+    .form{
+        height: auto;
+        margin: 0 auto;
+        padding: 25px;
+        font-weight: bold;
+        width: 60%;
+    }
+    
+}
+
+
+@media screen and (max-width: 500px) {
+    header{
+        width: auto;
+    }
+    #recordatorio{
+        width: 85%;
+        margin-top: 55px;
+        padding: 2px 2px 15px;
+        margin-bottom: 25px;
+        border-radius: 25px;
+    }
+    .izq{
+        text-align: left;
+        padding-left: 10px;
+        padding-top: 15px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .left{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .right{
+        display: none;
+    }
+    
+}
+
+
+

@@ -20,35 +20,43 @@
     </header>
 <!-------------------- Cuerpo -------------------->
     
-    <div>
-      <h3>Recuerda que:</h3>
-      <p>La AA1 tiene un peso del 15%</p>
-      <p>La AA2 tiene un peso del 20%</p>
-      <p>La AA3 tiene un peso del 30%</p>
-      <p>La AA4 tiene un peso del 35%</p>
+    <div id="recordatorio">
+      <div id="record">
+        <h3 class="izq">Recuerda que:</h3>
+        <div id="second">
+          <p class="than">La AA1 tiene un peso del 15%</p>
+          <p class="than">La AA2 tiene un peso del 20%</p>
+          <p class="than">La AA3 tiene un peso del 30%</p>
+          <p class="than">La AA4 tiene un peso del 35%</p>
+        </div>
+      </div>
     </div>
+
     <div class="form">
-        <form>
+        <div class="interno">
+          <form>
             <label for="primera">Ingresa tu nota AA1:</label>
-            <input type="number" id="primera" name="primera" maxlength="2">     <br><br>
+            <input type="number" id="primera" name="primera" min="0" max="20" oninput="limitarNumber(this)">     <br><br>
     
             <label for="segunda">Ingresa tu nota AA2:</label>
-            <input type="number" id="segunda" name="segunda" maxlength="2">     <br><br>
+            <input type="number" id="segunda" name="segunda" min="0" max="20" oninput="limitarNumber(this)">     <br><br>
     
             <label for="tercera">Ingresa tu nota AA3:</label>
-            <input type="number" id="tercera" name="tercera" maxlength="2">     <br><br>
+            <input type="number" id="tercera" name="tercera" min="0" max="20" oninput="limitarNumber(this)">     <br><br>
     
             <label for="cuarta">Ingresa tu nota AA4:</label>
-            <input type="number" id="cuarta" name="cuarta" maxlength="2">       <br><br>
+            <input type="number" id="cuarta" name="cuarta" min="0" max="20" oninput="limitarNumber(this)">       <br><br>
     
             <!-------- Botón de envío -------->
-            <button type="button" onclick="calcularProm(event)">Calcular mi promedio</button><br><br>
+            <button type="button" onclick="calcularProm(event)" id="calcular">Obtener mi promedio</button>
+            <a href="index.html"><button type="button" onclick="otro()" id="otro">Calcular otro promedio</button></a>
+            <br><br>
 
             <!-------- Output del promedio -------->
-            <label for="miInput">Tu promedio es:</label>
-            <input type="text" id="miInput" disabled="Acá se verá tu promedio">
+            <p for="miInput" id="aparecer"></p>
         </form>
-    </div>
+        </div>
+    </div><br>
 
 <!-------------------- Footer -------------------->
     <footer>
